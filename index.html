@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/splide.min.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <title>Ryan Jacobo</title>
+  </head>
+
+  <body>
+    <div id="loader-wrapper">
+      <div id="loader"></div>
+      <div class="loader-section section-left"></div>
+      <div class="loader-section section-right"></div>
+    </div>
+    <header id="home">
+      <div class="navigation">
+        <div class="dot logo">
+          <img src="./images/title.png" alt="" srcset="" />
+        </div>
+        <div
+          class="menu"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasRight"
+          aria-controls="offcanvasRight"
+        >
+          <i class="fa-solid fa-bars dot"></i>
+        </div>
+
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasRight"
+          aria-labelledby="offcanvasRightLabel"
+        >
+          <div class="offcanvas-header">
+            <button
+              type="button"
+              class="btn-close text-reset"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul>
+              <li
+                class="dot"
+                data-bs-toggle="offcanvas"
+                data-bs-dismiss="offcanvas"
+              >
+                <a class="nav-links" href="#">Home</a>
+              </li>
+              <li
+                class="dot"
+                data-bs-toggle="offcanvas"
+                data-bs-dismiss="offcanvas"
+              >
+                <a class="nav-links" href="#about">About</a>
+              </li>
+              <li
+                class="dot"
+                data-bs-toggle="offcanvas"
+                data-bs-dismiss="offcanvas"
+              >
+                <a class="nav-links" href="#projects">Projects</a>
+              </li>
+              <li
+                class="dot"
+                data-bs-toggle="offcanvas"
+                data-bs-dismiss="offcanvas"
+              >
+                <a class="nav-links" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="container information">
+        <h1 class="name">
+          <span class="splitColor">I'm Ryan:</span> <span id="type"></span>
+        </h1>
+        <div class="cta-button">
+          <button class="btn dot"><a href="#">About me...</a></button>
+        </div>
+      </div>
+
+      <div class="status-bar">
+        <ul>
+          <li><a class="second-list dot active" href="#home">HOME</a></li>
+          <li><a class="second-list dot" href="#about">ABOUT</a></li>
+          <li><a class="second-list dot" href="#projects">PROJECTS</a></li>
+          <li><a class="second-list dot" href="#contact">CONTACT</a></li>
+        </ul>
+      </div>
+
+      <div class="social-icons">
+        <i class="fa-brands fa-linkedin dot"></i>
+        <i class="fa-brands fa-square-github dot"></i>
+        <i class="fa-brands fa-codepen dot"></i>
+      </div>
+      <video id="background-video" autoplay loop muted>
+        <source src="./images/triangels.mp4" type="video/mp4" />
+      </video>
+
+      <div class="arrow dot">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </header>
+
+    <main>
+      <section id="about">
+        <div class="container">
+          <div class="about-section">
+            <h2><span class="splitColor">About</span> Me..</h2>
+            <p>
+              Self-driven and knowledgeable Front End Developer and Website
+              Designer with over 5 years of experience. Seasoned HTML/CSS coder,
+              with a wealth of positive client and colleague feedback. Over the
+              past 3 years I have been honored to be the person my teammates
+              come to for challenging coding requests and take pride in the
+              outcome of my work.
+            </p>
+            <div class="blob">
+              <svg
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 500 500"
+                width="100%"
+                id="blobSvg"
+              >
+                <defs>
+                  <linearGradient
+                    id="gradient"
+                    x1="0%"
+                    y1="0%"
+                    x2="0%"
+                    y2="100%"
+                  >
+                    <stop
+                      offset="0%"
+                      style="stop-color: rgb(245, 245, 245)"
+                    ></stop>
+                    <stop
+                      offset="100%"
+                      style="stop-color: rgb(245, 245, 245)"
+                    ></stop>
+                  </linearGradient>
+                </defs>
+                <path id="blob" fill="url(#gradient)">
+                  <animate
+                    attributeName="d"
+                    dur="10000ms"
+                    repeatCount="indefinite"
+                    values="M440.5,320.5Q418,391,355.5,442.5Q293,494,226,450.5Q159,407,99,367Q39,327,31.5,247.5Q24,168,89,125.5Q154,83,219.5,68Q285,53,335.5,94.5Q386,136,424.5,193Q463,250,440.5,320.5Z;M453.78747,319.98894Q416.97789,389.97789,353.96683,436.87838Q290.95577,483.77887,223.95577,447.43366Q156.95577,411.08845,105.64373,365.97789Q54.33169,320.86732,62.67444,252.61056Q71.01719,184.3538,113.01965,135.21007Q155.02211,86.06634,220.52211,66.46683Q286.02211,46.86732,335.5,91.94472Q384.97789,137.02211,437.78747,193.51106Q490.59704,250,453.78747,319.98894Z;M411.39826,313.90633Q402.59677,377.81265,342.92059,407.63957Q283.24442,437.46649,215.13648,432.5428Q147.02853,427.61911,82.23325,380.9572Q17.43796,334.29529,20.45223,250.83809Q23.46649,167.38089,82.5856,115.05707Q141.70471,62.73325,212.19045,63.73015Q282.67618,64.72705,352.67308,84.79839Q422.66998,104.86972,421.43486,177.43486Q420.19974,250,411.39826,313.90633Z;M440.5,320.5Q418,391,355.5,442.5Q293,494,226,450.5Q159,407,99,367Q39,327,31.5,247.5Q24,168,89,125.5Q154,83,219.5,68Q285,53,335.5,94.5Q386,136,424.5,193Q463,250,440.5,320.5Z;"
+                  ></animate>
+                </path>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bars-section">
+        <h2 style="text-align: center">
+          <span class="splitColor">What </span>I do
+        </h2>
+        <div class="container">
+          <div class="row todos">
+            <div class="col">
+              <div class="wrapper-bars">
+                <p>HTML</p>
+                <div class="progress hidden">
+                  <div
+                    class="progress-bar bg-warning progress-bar-striped progress-bar-animated"
+                    role="progressbar"
+                    aria-valuenow="95"
+                    style="width: 95%"
+                    aria-valuemin=""
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <p>CSS</p>
+                <div class="progress hidden">
+                  <div
+                    class="progress-bar bg-warning progress-bar-striped progress-bar-animated"
+                    role="progressbar"
+                    aria-valuenow="85"
+                    style="width: 85%"
+                    aria-valuemin=""
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <p>JAVASCRIPT</p>
+                <div class="progress hidden">
+                  <div
+                    class="progress-bar bg-warning progress-bar-striped progress-bar-animated"
+                    role="progressbar"
+                    aria-valuenow="65"
+                    style="width: 65%"
+                    aria-valuemin=""
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <p>MYSQL</p>
+                <div class="progress hidden">
+                  <div
+                    class="progress-bar bg-warning progress-bar-striped progress-bar-animated"
+                    role="progressbar"
+                    aria-valuenow="75"
+                    style="width: 75%"
+                    aria-valuemin=""
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="slider">
+                <div class="container">
+                  <div class="splide">
+                    <div class="splide__slider">
+                      <div class="splide__track">
+                        <ul class="splide__list">
+                          <li class="splide__slide">
+                            <div class="card h-100" style="max-width: 18rem">
+                              <div class="card-body">
+                                <p><i class="fab fa-html5"></i></p>
+                                <p>BUILD</p>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="splide__slide">
+                            <div class="card h-100" style="max-width: 18rem">
+                              <div class="card-body">
+                                <p><i class="fab fa-figma"></i></p>
+                                <p>PROTOTYPE</p>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="splide__slide">
+                            <div class="card h-100" style="max-width: 18rem">
+                              <div class="card-body">
+                                <p><i class="fab fa-app-store"></i></p>
+                                <p>Design</p>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="splide__slide">
+                            <div class="card h-100" style="max-width: 18rem">
+                              <div class="card-body">
+                                <p><i class="fas fa-database"></i></p>
+                                <p>RESEARCH</p>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <div class="container">
+          <div class="spacer"></div>
+          <h1 class="section-title">
+            Latest <span class="splitColor">Project</span>
+          </h1>
+          <div class="container">
+            <div class="grid-gallery">
+              <div class="grid-item one">
+                <img src="./images/phone.jpg" />
+                <p>UX/UI Design</p>
+              </div>
+              <div class="grid-item two">
+                <img src="./images/perfume.jpg" />
+                <p>Web Design</p>
+              </div>
+              <div class="grid-item three">
+                <img src="./images/frame.jpg" />
+                <p>UX/UI Design</p>
+              </div>
+              <div class="grid-item four">
+                <img src="./images/concrete.jpg" />
+                <p>Web Design</p>
+              </div>
+              <div class="grid-item five">
+                <img src="./images/computer.jpg" />
+                <p>Web Design</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact">
+        <div class="spacer"></div>
+        <div class="container contact-info">
+          <div class="row">
+            <div class="col">
+              <div class="form-section">
+                <h2><span class="splitColor">Lets</span> Talk...</h2>
+                <div>
+                  <form
+                    id="contactform"
+                    action="https://formsubmit.io/send/rhyan929@yahoo.com"
+                    method="POST"
+                  >
+                    <input
+                      name="name"
+                      type="text"
+                      class="feedback-input hidden"
+                      placeholder="Name"
+                      required
+                    />
+                    <input
+                      name="email"
+                      type="text"
+                      class="feedback-input hidden"
+                      placeholder="Email"
+                      required
+                    />
+                    <textarea
+                      name="text"
+                      class="feedback-input hidden"
+                      placeholder="Comment"
+                    ></textarea>
+                    <input
+                      name="_formsubmit_id"
+                      type="text"
+                      style="display: none"
+                    />
+                    <input class="hidden" type="submit" value="SUBMIT" />
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="col info">
+              <h3>Contact Details</h3>
+              <p>Winchester, CA, 92596</p>
+              <p>rhyan929@yahoo.com</p>
+              <h3 class="underline">Social</h3>
+              <p class="second-icons">
+                <i class="fa-brands fa-linkedin dot"></i>
+                <i class="fa-brands fa-square-github dot"></i>
+                <i class="fa-brands fa-codepen dot"></i>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="cursor"></div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Design and Develop by: Ryan Jacobo</p>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+    <script src="./js/scroll.js"></script>
+    <script src="./js/splide.js"></script>
+    <script src="./js/main.js"></script>
+    <script>
+      var typed = new Typed("#type", {
+        strings: ["Web Designer", "Front End Developer"],
+        typeSpeed: 80,
+        loop: true,
+        backDelay: 1500,
+      });
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        setTimeout(function () {
+          document.querySelector("body").classList.add("loaded");
+        }, 1500);
+      });
+    </script>
+  </body>
+</html>
