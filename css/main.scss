@@ -266,14 +266,17 @@ header {
     bottom: 0;
 z-index: -1;
   }
-.social-icons {
-    color: $primaryColor;
+.social-icons  {
     position: absolute;
     bottom: 3.5rem;
     left: 5rem;
     font-size: 1.8rem;
     cursor: pointer;
 }
+.social-icons a {
+    color: $primaryColor;
+}
+
 .fa-brands {
     margin: 0 .5rem;
     transition: 500ms;
@@ -604,6 +607,9 @@ width: 100%;
 }
 .second-icons {
     font-size: 1.5rem;
+}
+.second-icons a {
+    color: $primaryColor;
 }
 .column {
     border: 1px solid #fff;

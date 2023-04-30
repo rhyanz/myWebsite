@@ -249,12 +249,15 @@ header {
 }
 
 .social-icons {
-  color: #ffffff;
   position: absolute;
   bottom: 3.5rem;
   left: 5rem;
   font-size: 1.8rem;
   cursor: pointer;
+}
+
+.social-icons a {
+  color: #ffffff;
 }
 
 .fa-brands {
@@ -592,6 +595,10 @@ textarea {
 
 .second-icons {
   font-size: 1.5rem;
+}
+
+.second-icons a {
+  color: #ffffff;
 }
 
 .column {
