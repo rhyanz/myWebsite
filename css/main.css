@@ -643,9 +643,8 @@ textarea {
     font-size: 0.9rem;
   }
   #blobSvg {
-    max-width: 10rem;
+    max-width: 14rem;
     position: absolute;
-    bottom: 0;
   }
   .info {
     padding-top: 2rem;
