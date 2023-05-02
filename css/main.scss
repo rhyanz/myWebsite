@@ -623,7 +623,7 @@ width: 100%;
 @media only screen and (max-width: 600px) {
 
     body {
-        overflow: hidden;
+        overflow-x: hidden;
     }
     .container-grid {
         display: grid;
