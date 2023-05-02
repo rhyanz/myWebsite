@@ -606,6 +606,9 @@ textarea {
 }
 
 @media only screen and (max-width: 600px) {
+  body {
+    overflow: hidden;
+  }
   .container-grid {
     display: grid;
     grid-auto-flow: column;
@@ -645,6 +648,7 @@ textarea {
   #blobSvg {
     max-width: 14rem;
     position: absolute;
+    bottom: 0;
   }
   .info {
     padding-top: 2rem;
