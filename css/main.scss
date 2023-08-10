@@ -505,6 +505,10 @@ width: 100%;
   align-items: center;
   justify-content: center;
 }
+.overlay a {
+  color: #fff;
+  text-decoration: none;
+}
 .image-gallery li:hover .overlay {
   transform: scale(1);
 }
